@@ -1,20 +1,20 @@
 {
-  "name": "Marinelda Nails",
-  "short_name": "Marinelda",
+  "name": "Metanoia",
+  "short_name": "Metanoia",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/marinelda-nails/",
-  "scope": "/marinelda-nails/",
+  "start_url": "/metanoia/",
+  "scope": "/metanoia/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/marinelda-nails/icons/icon-192x192.png",
+      "src": "/metanoia/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/marinelda-nails/icons/icon-512x512.png",
+      "src": "/metanoia/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

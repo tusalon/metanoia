@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Marinelda Nails
+// sw.js - Service Worker para Metanoia
 
-const CACHE_NAME = 'marinelda-nails-v1';
+const CACHE_NAME = 'metanoia-v1';
 const urlsToCache = [
-  '/marinelda-nails/',
-  '/marinelda-nails/index.html',
-  '/marinelda-nails/admin.html',
-  '/marinelda-nails/admin-login.html',
-  '/marinelda-nails/setup-wizard.html',
-  '/marinelda-nails/editar-negocio.html',
-  '/marinelda-nails/manifest.json',
-  '/marinelda-nails/icons/icon-72x72.png',
-  '/marinelda-nails/icons/icon-96x96.png',
-  '/marinelda-nails/icons/icon-128x128.png',
-  '/marinelda-nails/icons/icon-144x144.png',
-  '/marinelda-nails/icons/icon-152x152.png',
-  '/marinelda-nails/icons/icon-192x192.png',
-  '/marinelda-nails/icons/icon-384x384.png',
-  '/marinelda-nails/icons/icon-512x512.png'
+  '/metanoia/',
+  '/metanoia/index.html',
+  '/metanoia/admin.html',
+  '/metanoia/admin-login.html',
+  '/metanoia/setup-wizard.html',
+  '/metanoia/editar-negocio.html',
+  '/metanoia/manifest.json',
+  '/metanoia/icons/icon-72x72.png',
+  '/metanoia/icons/icon-96x96.png',
+  '/metanoia/icons/icon-128x128.png',
+  '/metanoia/icons/icon-144x144.png',
+  '/metanoia/icons/icon-152x152.png',
+  '/metanoia/icons/icon-192x192.png',
+  '/metanoia/icons/icon-384x384.png',
+  '/metanoia/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/marinelda-nails/icons/icon-192x192.png');
+            return caches.match('/metanoia/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Marinelda Nails');
+console.log('✅ Service Worker configurado para Metanoia');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
